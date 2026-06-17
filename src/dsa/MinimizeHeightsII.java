@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class MinimizeHeightsII {
     public static void main(String[] args) {
-        int[] arr = {7};
+        int[] arr = {2, 6, 3, 4, 7, 2, 10, 3, 2, 1};
         Arrays.sort(arr);
-        int k=100;
+        int k=3;
         int ans = arr[arr.length-1] - arr[0];
         for (int i=0; i<arr.length-1;i++){
             int minHeight = Math.min(arr[0]+k,arr[i+1]-k);
